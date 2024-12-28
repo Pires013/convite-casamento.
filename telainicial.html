@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Casamento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- Fonte Lobster -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f8f3ed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .convite {
+            width: 600px;
+            padding: 20px;
+            background: #fff;
+            border: 2px solid #d4a59a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+
+        .convite:before, .convite:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://source.unsplash.com/featured/?floral'); /* Você pode substituir por uma imagem de flores */
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .versiculo {
+            font-size: 14px;
+            color: #6e5045;
+            font-style: italic;
+            position: absolute;
+            top: 10px;
+            left: 20px; /* Posição no canto superior esquerdo */
+            width: calc(100% - 40px); /* Ajusta a largura do versículo */
+        }
+
+        .nomes {
+            font-size: 56px; /* Aumentei o tamanho da fonte */
+            color: #8a5e55;
+            margin-bottom: 10px;
+            margin-top: 60px; /* Adicionei margem superior para separar do versículo */
+            font-family: 'Lobster', cursive; /* Mudança para a fonte Lobster */
+        }
+
+        .nomes span {
+            color: #d36b5c;
+        }
+
+        .texto {
+            font-size: 18px;
+            color: #6e5045;
+            margin-bottom: 30px;
+        }
+
+        .data {
+            margin: 20px 0;
+            color: #6e5045;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .data .mes-dia-ano {
+            text-align: center;
+        }
+
+        .data .mes {
+            font-size: 20px;
+        }
+
+        .data .dia {
+            font-size: 50px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            
+        }
+
+        .data .ano {
+            font-size: 20px;
+        }
+
+        .data .horario {
+            font-size: 18px;
+        }
+
+        .icones {
+            display: flex;
+            justify-content: center; /* Alinha os itens ao centro */
+            align-items: center;     /* Garante que os itens fiquem alinhados verticalmente */
+            margin-top: 30px;
+        }
+
+        .icones div {
+            text-align: center;
+            margin: 0 10px; /* Adiciona espaçamento entre os ícones */
+        }
+
+        .icones img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .icones span {
+            display: block;
+            font-size: 14px;
+            color: #6e5045;
+            margin-top: 5px;
+        }
+
+        .icones a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .rodape {
+            font-size: 14px;
+            color: #6e5045;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="convite">
+        <div class="versiculo">“Para que todos vejam e saibam e considerem e, juntamente, entendam que a mão do Senhor fez isso.”<br> Isaías 41:20</div>
+
+        <div class="nomes">Selma e Kiko</div>
+
+        <div class="texto">Convidam para a cerimônia de seu casamento a realizar-se no dia</div>
+
+        <div class="data">
+            <div class="horario">Sábado |</div>
+            <div class="mes-dia-ano">
+                <div class="mes">Janeiro</div>
+                <div class="dia">18</div>
+                <div class="ano">2025 </div>
+            </div>
+            <div class="horario">| às 17:30 horas</div>
+        </div>
+
+        <div class="icones">
+            <div>
+                <a href="https://www.google.com/maps/dir//GRAND+RESORT+SERRA+NEGRA,+Amato+Sobrinho+-+R.+Comendador+Vicente+Amaro+Sobrinho,+390+-+Placidol%C3%A2ndia,+Serra+Negra+-+SP,+13930-000/@-22.6112169,-46.7068837,15z/data=!4m20!1m10!3m9!1s0x94c9188675164001:0x79646d99ee22a1ce!2sGRAND+RESORT+SERRA+NEGRA!5m2!4m1!1i2!8m2!3d-22.6123487!4d-46.7140432!16s%2Fg%2F1thzp_x3!4m8!1m0!1m5!1m1!1s0x94c9188675164001:0x79646d99ee22a1ce!2m2!1d-46.7140432!2d-22.6123486!3e2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                    <img src="https://img.icons8.com/ios/50/000000/place-marker.png" alt="Localização">
+                    <span>Localização</span>
+                </a>
+            </div>
+            <div>
+                <a href="confirmacao.html">
+                    <img src="https://img.icons8.com/ios/50/000000/checkmark.png" alt="Confirmar">
+                    <span>Confirme Presença</span>
+                </a>
+            </div>
+            <div>
+                <a href='https://postimg.cc/68W67C1G' target='_blank'>""
+                    <img src="https://img.icons8.com/ios/50/000000/gift.png" alt="Lista de Presentes">
+                    <span>Sugestão de Presentes</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="rodape">Confirmação de presença até o dia 03/01/2025</div>
+    </div>
+    
+</body>
+</html>
